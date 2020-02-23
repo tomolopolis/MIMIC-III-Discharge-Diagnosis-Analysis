@@ -1,5 +1,8 @@
 # Default ignored files
 /workspace.xml
 
-# Don't check-in MIMIC-III data
+# Cannot check-in MIMIC-III data
 data/*
+
+# Cannot check-in UMLS based models
+medcat_models/*
