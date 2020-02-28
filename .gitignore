@@ -2,7 +2,7 @@
 /workspace.xml
 
 # Cannot check-in MIMIC-III data
-data/*
+data/*.csv
 
 # Cannot check-in UMLS based models
 medcat_models/*

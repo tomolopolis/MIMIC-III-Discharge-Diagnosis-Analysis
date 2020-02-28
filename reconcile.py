@@ -97,5 +97,6 @@ def remove_duplicate_mapped_assigned_codes(notes: pd.DataFrame, codes: pd.DataFr
             p['match'] = 'assigned_no_pred'
         rows_to_keep.extend(no_match_codes)
         joined_df.extend(rows_to_keep)
-    pd.DataFrame(joined_df)
+    joined_df = pd.DataFrame(joined_df)
+    joined_df.hadm = joined_df.hadm.apply(str)
     return joined_df
